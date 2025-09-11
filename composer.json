@@ -2,6 +2,12 @@
     "name": "retree/dbuser",
     "description": "Database user class utilities for Retree Hawaii", 
     "type": "library",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/avisitor/dbbase.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Common\\User\\": "src/"
@@ -9,6 +15,6 @@
     },
     "require": {
         "php": ">=7.4",
-        "retree/dbbase": "*"
+        "retree/dbbase": "dev-master"
     }
 }
