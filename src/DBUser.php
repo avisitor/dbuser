@@ -12,3 +12,5 @@ class DBUser extends DBBase {
         return $this->query($sql);
     }
 }
+// Backward compatibility alias
+class_alias(__NAMESPACE__.'\\DBUser', 'Retree\\User\\DBUser');

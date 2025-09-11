@@ -1,20 +1,14 @@
 {
-  "name": "retree/dbuser",
-  "description": "User data access (DBUser) extracted from retreehawaii",
-  "type": "library",
-  "license": "MIT",
-  "require": {
-    "php": ">=8.0",
-    "retree/dbbase": "^1.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Common\\User\\": "src/"
+    "name": "retree/dbuser",
+    "description": "Database user class utilities for Retree Hawaii", 
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Common\\User\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "retree/dbbase": "*"
     }
-  },
-  "extra": {
-    "retree-sql": {
-      "init": "sql/init.sql"
-    }
-  }
 }
