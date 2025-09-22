@@ -202,4 +202,9 @@ class DBUser extends DBBase
             return false;
         }
     }
+    public function getAdminEmails() {
+        $sql = "select username email from users u,tags t where u.username = t.email and t.tag = 'Admin';";
+        $records = $this->query( $sql );
+        return $records;
+    }
 }
