@@ -1,6 +1,6 @@
 {
-    "name": "retree/dbuser",
-    "description": "Database user class utilities for Retree Hawaii", 
+    "name": "avisitor/dbuser",
+    "description": "Database user class utilities", 
     "type": "library",
     "repositories": [
         {
@@ -15,6 +15,6 @@
     },
     "require": {
         "php": ">=7.4",
-        "retree/dbbase": "dev-master"
+        "avisitor/dbbase": "dev-master"
     }
 }
