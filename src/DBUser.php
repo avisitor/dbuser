@@ -180,11 +180,12 @@ class DBUser extends DBBase
                 $params['rate'] = 0;
             }
             
-            // For users table with auto-increment id, use INSERT instead of REPLACE
-            // and exclude id field from the potential fields
-            $potential = array_filter($this->getFieldNames(), function($field) {
-                return $field !== 'id'; // Exclude auto-increment id field
-            });
+            // Use INSERT and allow id only when explicitly provided
+            $potential = $this->getFieldNames();
+            $columns = $this->getTableColumns();
+            if ($columns) {
+                $potential = array_values(array_intersect($potential, $columns));
+            }
             
             $answers = array_intersect_key($params, array_flip($potential));
             if (count($answers) < 1) {
