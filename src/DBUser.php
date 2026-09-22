@@ -174,7 +174,7 @@ class DBUser extends DBBase
             
             // Generate hash if not provided (required field)
             if (!isset($params['hash'])) {
-                $params['hash'] = md5(uniqid(rand(), true));
+                $params['hash'] = md5(uniqid('', true));
             }
             
             // Set rate if not provided (set to 0 as default)
