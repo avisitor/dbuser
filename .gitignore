@@ -1,0 +1,4 @@
+.phpunit.cache/
+php_errorlog
+vendor/
+tests/reports/
