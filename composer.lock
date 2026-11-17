@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "avisitor/dbbase",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/avisitor/dbbase.git",
-                "reference": "64b4812f9c9e53c1bca127bdbcf2f2c5fce9deb9"
+                "reference": "f56f5f1a6b5b09c19f89d405e2416081b6f331ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avisitor/dbbase/zipball/64b4812f9c9e53c1bca127bdbcf2f2c5fce9deb9",
-                "reference": "64b4812f9c9e53c1bca127bdbcf2f2c5fce9deb9",
+                "url": "https://api.github.com/repos/avisitor/dbbase/zipball/f56f5f1a6b5b09c19f89d405e2416081b6f331ca",
+                "reference": "f56f5f1a6b5b09c19f89d405e2416081b6f331ca",
                 "shasum": ""
             },
             "require": {
@@ -39,10 +39,10 @@
             },
             "description": "Database base class utilities",
             "support": {
-                "source": "https://github.com/avisitor/dbbase/tree/v1.0.6",
+                "source": "https://github.com/avisitor/dbbase/tree/v1.0.7",
                 "issues": "https://github.com/avisitor/dbbase/issues"
             },
-            "time": "2026-09-04T23:49:45+00:00"
+            "time": "2026-11-17T01:39:28+00:00"
         }
     ],
     "packages-dev": [
@@ -1708,5 +1708,5 @@
         "php": ">=8.1"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
